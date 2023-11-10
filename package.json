@@ -1,0 +1,24 @@
+{
+  "name": "barbearia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaofeijon/barbearia.git"
+  },
+  "author": "Bilheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaofeijon/barbearia/issues"
+  },
+  "homepage": "https://github.com/joaofeijon/barbearia#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
