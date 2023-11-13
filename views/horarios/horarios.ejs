@@ -1,0 +1,27 @@
+<%- include("../header") %>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var calendarEl = document.getElementById("calendar");
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: "dayGridMonth",
+      headerToolbar: { center: "dayGridMonth,timeGridWeek" },
+      events: [
+        {
+          title: "Joao",
+          start: "2023-11-12T14:00:00",
+          end: "2023-11-12T15:00:00",
+          allDay: false,
+        },
+      ],
+      eventClick: function (info) {
+        const cliente = info.event.title;
+        window.open(`/horarios/${cliente}`);
+      },
+    });
+
+    calendar.render();
+  });
+</script>
+<div id="calendar"></div>
+<%- include("../footer") %>

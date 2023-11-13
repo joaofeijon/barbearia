@@ -1,0 +1,52 @@
+<%- include("../header") %>
+<form>
+  <div class="mb-3">
+    <label class="form-label">Cliente</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione</option>
+        <option>Joao</option>
+        <option>Rafel</option>
+        <option>Guga</option>
+    </select>
+    <div id="emailHelp" class="form-text">Nome do Cliente</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Barbeiro</label>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Selecione</option>
+      <option>Bruno</option>
+      <option>Thiago</option>
+      <option>arroz</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Dia</label>
+    <input
+        type="date"
+        class="form-control"
+        id="dia"
+        aria-describedby="emailHelp"
+    />
+    
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Horarios de Entrada</label>
+    <input
+        type="time"
+        class="form-control"
+        id="horarioEntrada"
+        aria-describedby="horarioEntrada"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Horarios de saida</label>
+    <input
+        type="time"
+        class="form-control"
+        id="horarioSaida"
+        aria-describedby="horarioSaida"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include("../footer") %>

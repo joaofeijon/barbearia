@@ -1,3 +1,40 @@
 <%- include("header") %>
-
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Barbeiro</th>
+        <th scope="col">Horario</th>
+        <th scope="col">Dia</th>
+        <th scope="col">Açoes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Joao</td>
+        <td>Bruno</td>
+        <td>19:00</td>
+        <td>10/11/2023</td>
+        <td><button type="button" class="btn btn-primary">Editar</button><button type="button" class="ms-2 btn btn-danger">Deletar</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Rafael</td>
+        <td>Bruno</td>
+        <td>20:00</td>
+        <td>20/12/2023</td>
+        <td><button type="button" class="btn btn-primary">Editar</button><button type="button" class="ms-2 btn btn-danger">Deletar</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Pedro</td>
+        <td>Bruno</td>
+        <td>14:00</td>
+        <td>24/12/2023</td>
+        <td><button type="button" class="btn btn-primary">Editar</button><button type="button" class="ms-2 btn btn-danger">Deletar</button></td>
+      </tr>
+    </tbody>
+  </table>
 <%- include("footer") %>
